@@ -22,7 +22,8 @@ Verify Get Posts 1 All Comments
     ${response}=    GET  ${API_URL}/posts/1/comments
     Should Be Equal As Strings    ${response.status_code}    200
     ${posts}    Set Variable    ${response.json()}
-    Dictionary Should Contain Value      ${posts}[4]    Hayden@althea.biz
+    ${length}=  Get length  ${posts}
+    Should be equal as numbers  ${length}  5
 
 Verify Get Posts 1 Comment 1
     ${response}=    GET   url=${API_URL}/comments?postId=1

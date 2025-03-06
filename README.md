@@ -24,8 +24,14 @@ PyCharm -> Settings -> Plug-ins
 
 ## Running tests
 
-To execute test cases, open a terminal in PyCharm and run this command to run and save all results in Results folder
+To execute all test cases, open a terminal in PyCharm and run this command to run test cases and save all results in Results folder
 ```
 robot -d Results .
 ```
 
+![img.png](Execution.png)
+
+
+## Reviewing results
+Results will be saved in generated html files, and you can open them by clicking on links in a terminal:
+![img_1.png](Results.png)

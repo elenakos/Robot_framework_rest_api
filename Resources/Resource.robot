@@ -2,7 +2,7 @@
 Documentation     A resource file with reusable keywords and variables.
 
 *** Variables ***
-${URLTOUSE}        https://www.google.com
+${API_URL}        https://jsonplaceholder.typicode.com
 
 *** Keywords ***
 

@@ -1,5 +1,5 @@
 # Robot_framework_rest_api
-This repository contains a sample of testing REST API using Robot Framework. 
+This repository contains a sample of testing REST API using Robot Framework and RequestsLibrary. 
 
 All information about the API that is used in this example: https://jsonplaceholder.typicode.com/
 
@@ -14,7 +14,7 @@ Install Request library:
 ```
 pip install robotframework-requests
 ```
-Documentation for all keywords is [here](https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html)
+Documentation for all keywords available in RequestsLibrary is [here](https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html)
 
 
 ## Developing tests
@@ -22,6 +22,7 @@ You can use PyCharm to review and update test cases. Add **Hyper RobotFramework 
 ```
 PyCharm -> Settings -> Plug-ins 
 ```
+All test suites files should have .robot extension. All test suites and test cases can have setup and teardown instructions and tags.
 
 ## Running tests
 

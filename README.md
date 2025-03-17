@@ -1,5 +1,6 @@
 # Robot_framework_rest_api
-#### This repository contains a sample of testing REST API using Robot Framework
+This repository contains a sample of testing REST API using Robot Framework. 
+
 All information about the API that is used in this example: https://jsonplaceholder.typicode.com/
 
 ## Setup

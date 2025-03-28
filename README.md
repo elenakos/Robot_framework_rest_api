@@ -1,7 +1,9 @@
 # Robot_framework_rest_api
+[Robot Framework](https://robotframework.org/) is an open source automation framework for test automation and robotic process automation (RPA). It has a rich ecosystem of libraries for various testing needs, including web testing (Selenium), API testing, and more.
+
 This repository contains a sample of testing REST API using Robot Framework and RequestsLibrary. 
 
-All information about the API that is used in this example: https://jsonplaceholder.typicode.com/
+All information about the API that is used in this example can be found here: https://jsonplaceholder.typicode.com/
 
 ## Setup
 

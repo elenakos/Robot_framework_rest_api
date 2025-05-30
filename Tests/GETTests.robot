@@ -8,8 +8,7 @@ Default Tags      get    smoke
 *** Test Cases ***
 
 Verify Get Posts Returns Results
-    Create Session    jsonplaceholder    ${API_URL}
-    ${response}    GET On Session    jsonplaceholder    /posts
+    ${response}    GET     ${API_URL}/posts
     Should Be Equal As Strings    ${response.status_code}    200
     ${posts}    Set Variable    ${response.json()}
     Should Be True    len(${posts}) > 0

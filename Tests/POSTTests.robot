@@ -11,13 +11,12 @@ ${title}    Set Variable    Hello
 *** Test Cases ***
 
 Verify New Post Can Be Created
-    Create Session    jsonplaceholder      ${API_URL}
     ${title}          Set Variable         Hello from Robot
     ${body_text}      Set Variable         Post from Robot Framework
     ${user}           Set Variable         1
     ${headers}        Create Dictionary    Content-Type    application/json
     ${body}           Create Dictionary    title   ${title}      body     ${body_text}     userId    ${user}
-    ${response}       POST On Session      jsonplaceholder    /posts    json=${body}    headers=${headers}
+    ${response}       POST                 ${API_URL}/posts    json=${body}    headers=${headers}
     Should Be Equal As Strings             ${response.status_code}    201
     # Verify the response JSON
     ${response_json}    Set Variable       ${response.json()}

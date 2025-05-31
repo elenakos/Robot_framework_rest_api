@@ -18,6 +18,6 @@ Verify New Post Can Be Created
     ${body}           Create Dictionary    title   ${title}      body     ${body_text}     userId    ${user}
     ${response}       POST                 ${API_URL}/posts    json=${body}    headers=${headers}
     Should Be Equal As Strings             ${response.status_code}    201
-    # Verify the response JSON
+    # Verify the response should contain a title
     ${response_json}    Set Variable       ${response.json()}
     Dictionary Should Contain Item         ${response_json}    title    ${title}
